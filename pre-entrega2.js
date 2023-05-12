@@ -136,7 +136,7 @@ function buscador(){
      }
        
 }
-function agregarIndi(){
+function agregarIndi(){//Agrega un nuevo producto y pasa por contructor
    
     let nombre = prompt("Ingrese el nombre del producto");
     let precio = Number(prompt("Ingrese el precio del producto"));
@@ -144,7 +144,7 @@ function agregarIndi(){
     
     while (initMenu) {
         
-        if( nombre == "" || precio == 0 || bebida == "") { 
+        if( nombre == "" || precio == 0 || isNaN(precio) || bebida == "") { 
            
             alert("Los datos ingresados son incorrectos")
             let nombre = prompt("Ingrese el nombre del producto")
